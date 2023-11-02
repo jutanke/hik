@@ -17,6 +17,7 @@ The dataset has the following structure
         * `{dataset}_scene/`
             * `{object_name}.json`
             * `{object_name}.npy`
+
 In the rest of the documentation we assume that the folder `data/` is located at `/path/to/dataset/data/`.
 
 ## Sample Sequences
