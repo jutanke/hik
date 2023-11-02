@@ -27,6 +27,7 @@ pip install git+https://github.com/jutanke/hik.git
 ```
 
 ### Usage
+[API](https://github.com/jutanke/hik/blob/main/documentation/api.md)
 ```python
 import matplotlib.pylab as plt
 import numpy as np
