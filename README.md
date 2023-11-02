@@ -24,6 +24,11 @@ In the rest of the documentation we assume that the folder `data/` is located at
 
 ![](https://github.com/jutanke/hik/blob/main/documentation/data/count_pose.png)
 
+### Heatmaps
+![](https://github.com/jutanke/hik/blob/main/documentation/data/heatmaps.png)
+![](https://github.com/jutanke/hik/blob/main/documentation/data/heatmaps2.png)
+![](https://github.com/jutanke/hik/blob/main/documentation/data/heatmaps3.png)
+
 ## Sample Sequences
 
 ![](https://github.com/jutanke/hik/blob/main/documentation/data/A_32450.mp4.gif)
