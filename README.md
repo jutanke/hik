@@ -5,7 +5,7 @@ Forecasting human motion of multiple persons is very challenging. It requires to
 
 
 ## Dataset
-Download the [dataset](https://drive.google.com/file/d/1ctMoU8PcBSUQtJWuLIPhomhEsh3Pg0bf/view?usp=drive_link) (**current version 0.0.1**).
+Download the [dataset](https://drive.google.com/file/d/1ctMoU8PcBSUQtJWuLIPhomhEsh3Pg0bf/view?usp=drive_link) (**preliminary version 0.0.1**).
 The dataset has the following structure
 * `data/`
     * `body_models/`
