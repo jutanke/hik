@@ -20,6 +20,48 @@ The dataset has the following structure
 In the rest of the documentation we assume that the folder `data/` is located at `/path/to/dataset/data/`.
 
 ## Documentation
+### Install
+Install the tool via pip:
+```
+pip install git+https://github.com/jutanke/hik.git
+```
+
+### Usage
+```python
+import matplotlib.pylab as plt
+import numpy as np
+
+from hik.data.kitchen import Kitchen
+from hik.data import PersonSequences
+from hik.vis import plot_pose
+
+# load geometry
+kitchen = Kitchen.load_for_dataset(
+    dataset=dataset,
+    data_location="/path/to/dataset/data/scenes"
+)
+
+# load poses
+person_seqs = PersonSequences(
+    person_path="/path/to/dataset/data/poses"
+)
+
+smplx_path = "/path/to/dataset/data/body_models"
+
+fig = plt.figure(figsize=(10, 10))
+ax = fig.add_subplot(111, projection="3d")
+
+dataset = "C"  # ["A", "B", "C", "D"]
+frame = 12345
+
+kitchen.plot(ax, frame)
+for person in person_seqs.get_frame(dataset, frame):
+    plot_pose(ax, person["pose3d"], linewidth=1)
+
+ax.axis('off')
+```
+
+### 3D Skeleton
 
 | 3D joints (body)  | 3D joints (head) |
 | ------------- | ------------- |
