@@ -26,6 +26,11 @@ Install the tool via pip:
 pip install git+https://github.com/jutanke/hik.git
 ```
 
+For evaluation, [ndms](https://github.com/jutanke/ndms) has to be installed too:
+```
+pip install git+https://github.com/jutanke/ndms.git
+```
+
 ### Usage
 [API](https://github.com/jutanke/hik/blob/main/documentation/api.md)
 ```python
