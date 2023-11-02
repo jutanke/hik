@@ -93,3 +93,51 @@ seq.is_valid_at_frame(frame=9999)
 seq.get_frames_where_action(actions=["walking", "sitting"])
 
 ```
+
+## Kitchens
+
+```python
+from hik.data.kitchen import Kitchen
+
+# load geometry
+kitchen = Kitchen.load_for_dataset(
+    dataset="A",
+    data_location="/path/to/dataset/data/scenes"
+)
+
+# get the kitchen geometry for the given frame as
+# a list of 'hik.data.kitchen.EnvironmentObject'
+env_objects = kitchen.get_environment(frame=999)
+
+env_object = env_objects[0]  # hik.data.kitchen.EnvironmentObject
+# each object has a label attached to it which determines 
+# the class:
+# WHITEBOARD = 1
+# MICROWAVE = 2
+# KETTLE = 3
+# COFFEE_MACHINE = 4
+# TABLE = 5
+# SITTABLE = 6
+# CUPBOARD = 7
+# OCCLUDER = 8
+# DISHWASHER = 9
+# DRAWER = 10
+# SINK = 11
+# TRASH = 12
+# OUT_OF_BOUND = 13
+env_object.label.shape  # <- 13,
+
+# the location is either 8 points of a box (8 x 3)
+# for box-shaped objects or a 3d point + radius (4) 
+# for cylinder objects.
+# Note that cylinder objects always stand on the ground
+# (z=0)
+env_object.location
+
+# create 1000 random points
+pts3d = np.random.uniform(size=(1000, 3))
+# check if any of the points are inside
+# the object...
+env_object.is_inside(pts3d)
+
+```
