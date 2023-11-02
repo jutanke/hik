@@ -5,7 +5,7 @@ Forecasting human motion of multiple persons is very challenging. It requires to
 
 
 ## Dataset
-Download the [dataset](https://drive.google.com/file/d/1ctMoU8PcBSUQtJWuLIPhomhEsh3Pg0bf/view?usp=drive_link) (**current version 0.0.1**).
+Download the [dataset](https://drive.google.com/file/d/1ctMoU8PcBSUQtJWuLIPhomhEsh3Pg0bf/view?usp=drive_link) (**preliminary version 0.0.1**).
 The dataset has the following structure
 * `data/`
     * `body_models/`
@@ -24,6 +24,11 @@ In the rest of the documentation we assume that the folder `data/` is located at
 Install the tool via pip:
 ```
 pip install git+https://github.com/jutanke/hik.git
+```
+
+For evaluation, [ndms](https://github.com/jutanke/ndms) has to be installed too:
+```
+pip install git+https://github.com/jutanke/ndms.git
 ```
 
 ### Usage
