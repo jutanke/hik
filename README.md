@@ -20,6 +20,10 @@ The dataset has the following structure
 
 In the rest of the documentation we assume that the folder `data/` is located at `/path/to/dataset/data/`.
 
+## Statistics
+
+![](https://github.com/jutanke/hik/blob/main/documentation/data/count_pose.png)
+
 ## Sample Sequences
 
 ![](https://github.com/jutanke/hik/blob/main/documentation/data/A_32450.mp4.gif)
