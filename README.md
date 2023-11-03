@@ -1,4 +1,5 @@
 # [NeurIPS 2023 Dataset and Benchmark Track] Humans in Kitchens: A Dataset for Multi-Person Human Motion Forecasting with Scene Context
+#### Julian Tanke, Oh-Hun Kwon, Felix Mueller, Andreas Doering, Juergen Gall
 ![](https://github.com/jutanke/hik/blob/main/documentation/data/A_32450.mp4.gif)
 
 Official API for our [dataset](https://github.com/jutanke/hik/blob/main/documentation/data/neurips_camready.pdf) submission to NeurIPS 2023.
@@ -78,6 +79,16 @@ ax.axis('off')
 | ------------- | ------------- |
 | ![](https://github.com/jutanke/hik/blob/main/documentation/data/skeleton_jids.png)  | ![](https://github.com/jutanke/hik/blob/main/documentation/data/skeleton_jids_head.png) |
 
+
+## Bibtex
+```
+@article{tanke2023humanskitch,
+  title={Humans in Kitchens: A Dataset for Multi-Person Human Motion Forecasting with Scene Context},
+  author={Tanke, Julian and Kwon, Oh-Hun and Mueller, Felix and Doering, Andreas and Gall, Juergen},
+  journal={Advances in Neural Information Processing Systems},
+  year={2023}
+}
+```
 
 ## Statistics
 
