@@ -4,14 +4,12 @@
 
 Official API for our [dataset](https://github.com/jutanke/hik/blob/main/documentation/data/neurips_camready.pdf) submission to NeurIPS 2023.
 
-**This repository is work-in-progress until NeurIPS 2023 (Dec. 10th 2023)**
-
 ## Abstract
 Forecasting human motion of multiple persons is very challenging. It requires to model the interactions between humans and the interactions with objects and the environment. For example, a person might want to make a coffee, but if the coffee machine is already occupied the person will have to wait. These complex relations between scene geometry and persons arise constantly in our daily lives, and models that wish to accurately forecast human behavior will have to take them into consideration. To facilitate research in this direction, we propose Humans in Kitchens, a large-scale multi-person human motion dataset with annotated 3D human poses, scene geometry and activities per person and frame. Our dataset consists of over 7.3h recorded data of up to 16 persons at the same time in four kitchen scenes, with more than 4M annotated human poses, represented by a parametric 3D body model. In addition, dynamic scene geometry and objects like chair or cupboard are annotated per frame. As first benchmarks, we propose two protocols for short-term and long-term human motion forecasting.
 
 
 ## Dataset
-Download the [dataset](https://drive.google.com/file/d/1ctMoU8PcBSUQtJWuLIPhomhEsh3Pg0bf/view?usp=drive_link) (**preliminary version 0.0.1**).
+Download the [dataset](https://drive.google.com/file/d/1ctMoU8PcBSUQtJWuLIPhomhEsh3Pg0bf/view?usp=drive_link).
 The dataset has the following structure
 * `data/`
     * `body_models/`
